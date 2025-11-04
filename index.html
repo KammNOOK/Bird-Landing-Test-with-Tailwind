@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="src/output.css" rel="stylesheet" />
+  <title>Bird Landing Page</title>
+</head>
+<body>
+
+<!-- Header: same design, collapses nicely on mobile -->
+<header class="flex items-center justify-between md:justify-center md:space-x-[88px] p-5">
+  <div>
+    <img class="w-8 h-8" src="birdlogo.png" alt="Logo">
+  </div>
+
+  <!-- hide links on very small screens to avoid wrapping; show from sm up -->
+  <nav class="hidden sm:flex sm:space-x-6">
+    <a href="Product.html">Product</a>
+    <a href="Solutions.html">Solutions</a>
+    <a href="Resources.html">Resources</a>
+    <a href="Company.html">Company</a>
+  </nav>
+
+  <!-- buttons collapse under a single “Contact sales” on xs to avoid crowding -->
+  <div class="hidden sm:flex sm:space-x-2">
+    <button class="pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded border border-black">Log in</button>
+    <button class="bg-black text-white pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded">Contact sales</button>
+  </div>
+
+  <!-- minimal action on xs -->
+  <div class="sm:hidden">
+    <button class="bg-black text-white px-3 py-1.5 rounded text-sm">Contact</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="flex flex-col items-start md:items-center mt-[25px] mb-[25px] xl:max-w-[1200px] mx-auto px-4">
+  <div>
+    <h1 class="text-[32px] leading-tight sm:text-[44px] md:text-[52px] xl:text-[60px] font-semibold">
+      Marketing built <span class="text-[#60e893]">for<br class="hidden sm:block"> the AI era.</span>
+    </h1>
+    <p class="py-4 sm:py-6 xl:py-8 text-[16px] sm:text-[18px] md:text-[20px] xl:text-[22px] max-w-[560px] text-neutral-700">
+      The complete platform for enterprise brands to acquire, convert, and retain customers across every channel-powered by AI that actually understands your business.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-[#1043b2] text-white pt-2.5 pb-2.5 pl-5 pr-5 rounded-[5px]">Contact sales</button>
+      <button class="pt-1.5 pb-1.5 pl-2.5 pr-2.5 rounded border-white border-2">Start for free</button>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STRIP (wraps on mobile) -->
+<section class="px-4">
+  <div class="flex flex-wrap items-center justify-center gap-x-[30px] gap-y-4">
+    <p class="text-[12px] w-full sm:w-[130px] text-center sm:text-left">
+      Fortune 500 companies that depend on Bird
+    </p>
+    <img class="h-6" src="pinterest.png" alt="Company Logos">
+    <img class="h-6" src="uber.png" alt="Company Logos">
+    <img class="h-6" src="square (2).png" alt="Company Logos">
+    <img class="h-6" src="airwallex.png" alt="Company Logos">
+    <img class="h-6" src="adobe.png" alt="Company Logos">
+  </div>
+</section>
+
+<!-- HERO VIDEO -->
+<section class="flex justify-center items-center px-4 mt-6">
+  <video class="w-full max-w-[95%] sm:max-w-3xl md:max-w-5xl xl:max-w-7xl rounded-[10px]"
+         src="landingvid1.mp4" type="video/mp4" autoplay muted loop playsinline></video>
+</section>
+
+<!-- INTRO LINE -->
+<section>
+  <div class="flex mt-12 mb-10 xl:max-w-[1240px] items-center justify-center px-4">
+    <p class="xl:py-8 text-[18px] sm:text-[20px] xl:text-[22px] max-w-[660px] text-center sm:text-left">
+      Get to know Bird.<br><span class="text-[#ADADAD]">AI-powered customer lifecycle management that delivers results.</span>
+    </p>
+  </div>
+</section>
+
+<!-- FEATURE GRID (1 → 2 → 3) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px] w-full max-w-[1320px] mx-auto mb-[100px] px-4">
+  <div class="bg-[#fafafa] rounded-[10px] p-4">
+    <img class="w-6 pb-6" src="dataplatform.png" alt="">
+    <p class="text-black">Customer Data Platform<br><span class="text-[#ADADAD]">Every signal, unified and current</span></p>
+  </div>
+  <div class="bg-[#fafafa] rounded-[10px] p-4">
+    <img class="w-6 pb-6" src="datamodeling.png" alt="">
+    <p class="text-black">Custom Data Modeling<br><span class="text-[#ADADAD]">Objects and segments for your business</span></p>
+  </div>
+  <div class="bg-[#fafafa] rounded-[10px] p-4">
+    <img class="w-6 pb-6" src="multichannel.png" alt="">
+    <p class="text-black">Multichannel Orchestration<br><span class="text-[#ADADAD]">Reach customers anywhere</span></p>
+  </div>
+  <div class="bg-[#fafafa] rounded-[10px] p-4">
+    <img class="w-6 pb-6" src="smartpersonalization.png" alt="">
+    <p class="text-black">Smart Personalization<br><span class="text-[#ADADAD]">Marketing that runs itself</span></p>
+  </div>
+  <div class="bg-[#fafafa] rounded-[10px] p-4">
+    <img class="w-6 pb-6" src="enterpriseinfra.png" alt="">
+    <p class="text-black">Enterprise Infrastructure<br><span class="text-[#ADADAD]">APIs and security that scale</span></p>
+  </div>
+  <div class="bg-[#fafafa] rounded-[10px] p-4">
+    <img class="w-6 pb-6" src="predictiveanalysis.png" alt="">
+    <p class="text-black">Predictive Analytics<br><span class="text-[#ADADAD]">See revenue before it happens</span></p>
+  </div>
+</section>
+
+<!-- HEAD + COPY -->
+<section class="flex flex-col items-start md:items-center mt-[25px] mb-[25px] xl:max-w-[1200px] mx-auto px-4">
+  <div>
+    <p class="font-semibold text-[26px] sm:text-[32px] xl:text-[45px] max-w-[400px]">
+      Turn scattered customer data into revenue growth.
+    </p>
+    <p class="text-[#ADADAD] py-4 sm:py-6 xl:py-8 text-[18px] md:text-[20px] xl:text-[22px] max-w-[560px]">
+      Every interaction feeds into a unified customer view that powers personalized experiences, targeted campaigns, and intelligent automation across every touchpoint.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-[#1043b2] text-white pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded">Contact sales</button>
+      <button class="pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded border border-white">Start for free</button>
+    </div>
+  </div>
+</section>
+
+<!-- ALT ROW 1 -->
+<section class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:space-x-[60px] mb-10 px-4">
+  <div>
+    <p class="xl:text-[22px] max-w-[560px] text-[18px]">Transform visitors<br>into lifetime customers.</p>
+    <p class="text-[#ADADAD] xl:text-[16px] text-[14px] max-w-[400px] py-6">
+      AI-powered journeys that adapt to each customer's behavior. From first click to loyal advocate, Bird orchestrates every touchpoint for maximum impact.
+    </p>
+    <a class="text-[#1043b2] font-semibold" href="BirdLanding.html">Marketing platform →</a>
+  </div>
+  <div class="w-full">
+    <img class="w-full max-w-[620px] rounded-lg mx-auto" src="right-img1.avif" alt="">
+  </div>
+</section>
+
+<!-- ALT ROW 2 -->
+<section class="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:space-x-[60px] mb-10 px-4">
+  <div class="w-full">
+    <img class="w-full max-w-[620px] rounded-lg mx-auto" src="left-img1.avif" alt="">
+  </div>
+  <div>
+    <p class="xl:text-[22px] max-w-[560px] text-[18px]">Make all your data<br>instantly actionable.</p>
+    <p class="text-[#ADADAD] xl:text-[16px] text-[14px] max-w-[410px] py-6">
+      Connect every data source into one intelligent platform. Create custom objects, model complex relationships,<br> and build segments that drive better marketing decisions.
+    </p>
+    <a class="text-[#1043b2] font-semibold" href="BirdLanding.html">Data platform →</a>
+  </div>
+</section>
+
+<!-- ALT ROW 3 -->
+<section class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:space-x-[60px] mb-10 px-4">
+  <div>
+    <p class="xl:text-[22px] max-w-[560px] text-[18px]">Let AI handle the<br> repetitive work.</p>
+    <p class="text-[#ADADAD] xl:text-[16px] text-[14px] max-w-[400px] py-6">
+      Set up campaigns once and let Bird's automation optimize, personalize, and improve them continuously. Your marketing runs itself while you focus on growth.
+    </p>
+    <a class="text-[#1043b2] font-semibold" href="BirdLanding.html">Marketing automation →</a>
+  </div>
+  <div class="w-full">
+    <img class="w-full max-w-[620px] rounded-lg mx-auto" src="right-img2.avif" alt="">
+  </div>
+</section>
+
+<!-- ALT ROW 4 -->
+<section class="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 lg:space-x-[70px] mb-10 px-4">
+  <div class="w-full">
+    <img class="w-full max-w-[620px] rounded-lg mx-auto" src="left-img2.avif" alt="">
+  </div>
+  <div>
+    <p class="xl:text-[22px] max-w-[560px] text-[18px]">Own your customer<br> communication.</p>
+    <p class="text-[#ADADAD] xl:text-[16px] text-[14px] max-w-[350px] py-6">
+      Reach customers on email, SMS, WhatsApp, and beyond with infrastructure built for enterprise scale and deliverability that actually works.
+    </p>
+    <a class="text-[#1043b2] font-semibold" href="BirdLanding.html">Communication channels →</a>
+  </div>
+</section>
+
+<!-- CTA COPY -->
+<section class="flex flex-col items-start md:items-center mt-[25px] mb-[25px] xl:max-w-[1240px] mx-auto leading-none px-4">
+  <div>
+    <p class="font-semibold text-[26px] sm:text-[32px] xl:text-[45px] w-full md:w-[800px] pb-6">
+      Businesses that turn customer data into intelligent experiences.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-[#1043b2] text-white pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded">Start for free</button>
+      <button class="pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded border border-white">Contact sales</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECOND VIDEO -->
+<section class="justify-center items-center flex xl:max-w-7xl mx-auto px-4">
+  <video class="w-full max-w-[95%] sm:max-w-3xl md:max-w-5xl rounded-[10px]"
+          src="landingvid1.mp4" type="video/mp4" autoplay muted loop playsinline></video>
+</section>
+
+<!-- TRUSTED LINE -->
+<section class="mt-12 mb-10 xl:max-w-[1240px] flex justify-center px-4">
+  <div class="text-center sm:text-left">
+    <p class="xl:py-8 text-[18px] sm:text-[20px] xl:text-[22px] max-w-[660px]">
+      Trusted by companies that depend on their data.<br><span class="text-[#ADADAD]">See how leading brands use Bird CDP to drive intelligent marketing.</span>
+    </p>
+    <a class="text-[#1043b2] font-semibold inline-block mt-2" href="BirdLanding.html">View all customer stories →</a>
+  </div>
+</section>
+
+<!-- 3 STAT CARDS (1 → 2 → 3) -->
+<section class="pt-[30px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1240px] mx-auto px-4 mb-[25px]">
+  <div class="relative w-full h-[480px] sm:h-[540px] lg:h-[600px] bg-cover bg-center rounded-lg flex flex-col justify-between p-6 text-white"
+       style="background-image: url('sms.avif');">
+    <img src="airwallex.png" alt="Company Logo" class="w-[100px] invert brightness-0">
+    <div>
+      <h2 class="text-5xl sm:text-6xl font-bold">94.4%</h2>
+      <p class="text-white/80 font-semibold">SMS deliverability improved</p>
+    </div>
+  </div>
+
+  <div class="relative w-full h-[480px] sm:h-[540px] lg:h-[600px] bg-cover bg-center rounded-lg flex flex-col justify-between p-6 text-white"
+       style="background-image: url('partner.avif');">
+    <img src="glovo.png" alt="Company Logo" class="w-20 invert brightness-0">
+    <div>
+      <h2 class="text-5xl sm:text-6xl font-bold">+300%</h2>
+      <p class="text-white/80 font-semibold">Partner onboarding efficiency</p>
+    </div>
+  </div>
+
+  <div class="relative w-full h-[480px] sm:h-[540px] lg:h-[600px] bg-cover bg-center rounded-lg flex flex-col justify-between p-6 text-white"
+       style="background-image: url('openrate.avif');">
+    <img src="zillow.png" alt="Company Logo" class="w-[90px] invert brightness-0">
+    <div>
+      <h2 class="text-5xl sm:text-6xl font-bold">161%</h2>
+      <p class="text-white/80 font-semibold">Open rate improvement</p>
+    </div>
+  </div>
+</section>
+
+<!-- MINI BRAND STRIP AGAIN (wrap) -->
+<section class="px-4">
+  <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
+    <p class="text-[12px] w-full sm:w-[130px] text-center sm:text-left">
+      Fortune 500 companies that depend on Bird
+    </p>
+    <img class="h-6" src="pinterest.png" alt="Company Logos">
+    <img class="h-6" src="uber.png" alt="Company Logos">
+    <img class="h-6" src="square (2).png" alt="Company Logos">
+    <img class="h-6" src="airwallex.png" alt="Company Logos">
+    <img class="h-6" src="adobe.png" alt="Company Logos">
+  </div>
+</section>
+
+<!-- TWO-UP BAND -->
+<section class="px-4 pt-[80px]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-[1200px] mx-auto">
+    <div>
+      <p class="xl:py-8 text-[18px] sm:text-[20px] xl:text-[22px] max-w-[660px]">
+        Connect anywhere<br><span class="text-[#ADADAD]">Plug in and get started immediately.</span>
+      </p>
+      <a class="text-[#1043b2] font-semibold" href="BirdLanding.html">View all customer stories →</a>
+    </div>
+    <div>
+      <p class="xl:py-8 text-[18px] sm:text-[20px] xl:text-[22px] max-w-[660px]">
+        Enterprise-level security.<br><span class="text-[#ADADAD]">Keep your data private.</span>
+      </p>
+      <a class="text-[#1043b2] font-semibold" href="BirdLanding.html">View all customer stories →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR FEATURES (1 → 2 → 4) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-[1240px] justify-center items-start py-12 mx-auto gap-6 px-4">
+  <div class="flex gap-3">
+    <img class="w-5 h-5" src="OC.png" alt="">
+    <p class="w-auto">Go live in minutes<br><span class="text-[#ADADAD]">Pre-built connectors for every major platform.</span></p>
+  </div>
+  <div class="flex gap-3">
+    <img class="w-5 h-5" src="OC.png" alt="">
+    <p class="w-auto">Complete data picture<br><span class="text-[#ADADAD]">Pull from every source, push to every system.</span></p>
+  </div>
+  <div class="flex gap-3">
+    <img class="w-5 h-5" src="SHIELD.png" alt="">
+    <p class="w-auto">Enterprise data security<br><span class="text-[#ADADAD]">Encryption, granular access control, built for AI systems.</span></p>
+  </div>
+  <div class="flex gap-3">
+    <img class="w-5 h-5" src="SHIELD.png" alt="">
+    <p class="w-auto">Certified compliance<br><span class="text-[#ADADAD]">Meet the highest global standards for AI and data processing.</span></p>
+  </div>
+</section>
+
+<!-- DEV BAND (kept your colors & layout, responsive grid) -->
+<section class="bg-[#1043b2] max-w-[1240px] rounded-[10px] py-14 px-6 sm:px-10 mx-auto">
+  <div>
+    <p class="text-white/80">Development</p>
+    <p class="font-semibold text-white text-[24px] sm:text-[32px] xl:text-[45px] max-w-[500px] leading-[1.2] py-6 sm:py-8">
+      Enterprise-ready APIs for developers who want to build custom experiences.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-black text-white pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded">Contact sales</button>
+      <button class="bg-[#1043b2] border border-black text-white pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded">Start for free</button>
+    </div>
+    <p class="text-white/90 xl:py-12 text-[16px] sm:text-[18px] xl:text-[22px] max-w-[550px]">
+      For teams that need direct programmatic access, Bird also offers comprehensive APIs that power messaging infrastructure for thousands of companies worldwide.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6">
+      <div>
+        <img class="h-12" src="TWOCIRC.png" alt="">
+        <p class="font-semibold text-white">SMS API<br><span class="text-[#A7B1D2]">Global SMS delivery with &lt;2.5 second delivery for 95% of messages. Local numbers in 140+ countries, with automatic failover.</span></p>
+        <div class="pt-8"><a class="text-white underline" href="BirdLanding.html">Learn more →</a></div>
+      </div>
+      <div>
+        <img class="h-12" src="DISCDRIVE.png" alt="">
+        <p class="font-semibold text-white">Email API<br><span class="text-[#A7B1D2]">Own and operate channels: 40% of world's email and SMS with 99.95% SLA-backed uptime.</span></p>
+        <div class="pt-8"><a class="text-white underline" href="BirdLanding.html">Learn more →</a></div>
+      </div>
+      <div>
+        <img class="h-12" src="VPIC.png" alt="">
+        <p class="font-semibold text-white">Voice API<br><span class="text-[#A7B1D2]">Two-way voice calling with global coverage. Perfect for authentication, notifications, and customer engagement.</span></p>
+        <div class="pt-8"><a class="text-white underline" href="BirdLanding.html">Learn more →</a></div>
+      </div>
+      <div>
+        <img class="h-12" src="WHATSAPP.png" alt="">
+        <p class="font-semibold text-white">WhatsApp Business API<br><span class="text-[#A7B1D2]">Send rich media messages with AI-optimized timing. Perfect for AI-triggered customer service and personalized engagement.</span></p>
+        <div class="pt-8"><a class="text-white underline" href="BirdLanding.html">Learn more →</a></div>
+      </div>
+      <div>
+        <img class="h-12" src="CIRCPARA.png" alt="">
+        <p class="font-semibold text-white">Specialized tools<br><span class="text-[#A7B1D2]">PowerMTA for high-volume sending, Momentum MTA for custom control, recipient validation, inbox tracking, and competitive intelligence.</span></p>
+        <div class="pt-8"><a class="text-white underline" href="BirdLanding.html">Learn more →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG IMAGE CTA -->
+<section class="pb-[60px] pt-[100px] px-4">
+  <div class="mx-auto rounded-[10px] bg-[url('working.avif')] bg-no-repeat bg-cover bg-center max-w-[1240px] p-6 sm:p-10 md:p-[40px] md:pb-[300px]">
+    <h2 class="text-white text-[28px] sm:text-[40px] md:text-6xl font-medium pb-6 sm:pb-10 drop-shadow">
+      The complete AI-native<br> platform that scales<br> with your business.
+    </h2>
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-[#2563eb] text-white pt-[5px] pb-[5px] pl-2.5 pr-2.5 rounded">Contact sales</button>
+      <button class="border pt-[5px] pb-[5px] pl-2.5 pr-2.5  rounded border-black text-white">Start for free</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (1 → 2 → 5 cols, keeping your groups) -->
+<footer class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mx-auto max-w-[1240px] pb-20 gap-10 px-4">
+  <nav>
+    <p class="pb-3 text-[#737373]">Marketing</p>
+    <ul class="space-y-2">
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Journeys</a></li>
+      <li><a href="#">Personalization</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Campaigns</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <p class="pb-3 text-[#737373]">Data</p>
+    <ul class="space-y-2">
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">CDP</a></li>
+      <li><a href="#">Integration</a></li>
+      <li><a href="#">Segmentation</a></li>
+      <li><a href="#">Export & Sync</a></li>
+      <li><a href="#">Governance</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <p class="pb-3 text-[#737373]">Automation</p>
+    <ul class="space-y-2">
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Workflows</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">Approvals</a></li>
+      <li><a href="#">Dynamic Content</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <p class="pb-3 text-[#737373]">Channels</p>
+    <ul class="space-y-2">
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Email</a></li>
+      <li><a href="#">SMS</a></li>
+      <li><a href="#">Push Notifications</a></li>
+      <li><a href="#">WhatsApp</a></li>
+      <li><a href="#">RCS</a></li>
+    </ul>
+  </nav>
+
+  <nav>
+    <p class="pb-3 text-[#737373]">Developer</p>
+    <ul class="space-y-2">
+      <li><a href="#">Email API</a></li>
+      <li><a href="#">WhatsApp API</a></li>
+      <li><a href="#">SMS API</a></li>
+      <li><a href="#">Numbers API</a></li>
+      <li><a href="#">Voice API</a></li>
+    </ul>
+  </nav>
+
+  <nav class="sm:col-span-2 lg:col-span-1">
+    <p class="pb-3 text-[#a3a5a9]">Solutions</p>
+    <ul class="space-y-2">
+      <li><a class="text-[#8b8b8b]" href="#">Retail and Ecommerce</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Fintech B2C</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Fintech B2B</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Banking</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">SaaS</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Marketplace</a></li>
+    </ul>
+  </nav>
+
+  <nav class="sm:col-span-2 lg:col-span-1">
+    <p class="pb-3 text-[#a3a5a9]">Resources</p>
+    <ul class="space-y-2">
+      <li><a class="text-[#8b8b8b]" href="#">Changelog</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Knowledge Base</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Developers Hub</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Support Center</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Customers</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Blog</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Integrations</a></li>
+    </ul>
+  </nav>
+
+  <nav class="sm:col-span-2 lg:col-span-1">
+    <p class="pb-3 text-[#a3a5a9]">Company</p>
+    <ul class="space-y-2">
+      <li><a class="text-[#8b8b8b]" href="#">About</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Pricing</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Partners</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Careers</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Legal</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Terms</a></li>
+      <li><a class="text-[#8b8b8b]" href="#">Privacy settings</a></li>
+    </ul>
+  </nav>
+
+  <div class="sm:col-span-2 lg:col-span-1">
+    <p class="pb-3 text-[#a3a5a9]">Newsletter</p>
+    <p class="text-[#8b8b8b]">Stay up to date with Bird through weekly updates to your inbox.</p>
+    <button class="bg-black mt-5 text-white py-1.5 px-6 rounded">Signup</button>
+    <p class="pt-6 text-[#8b8b8b]">Social</p>
+    <div class="flex gap-4">
+      <a href="">x.com</a>
+      <a href="">Instagram</a>
+      <a href="">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
